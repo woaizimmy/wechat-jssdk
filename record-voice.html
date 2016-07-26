@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load i18n %} 
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>微信JS-SDK测试</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'quote/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'tools/css/test.css' %}">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="col-xs-12 mb20">
+        <button type="button" class="btn btn-lg btn-primary col-xs-12" id="talk_btn">长按录音</button>
+    </div>
+
+    <div class="col-xs-12 mb20">
+        <div class="btn btn-lg btn-success col-xs-12" id="playVoice">播放录音</div>
+    </div>
+
+    <div class="col-xs-12 mb20">
+        <div class="btn btn-lg btn-danger col-xs-12" id="stopVoice">停止播放</div>
+    </div>
+
+    <div class="col-xs-12 mb20">
+        <div class="btn btn-lg btn-primary col-xs-12" id="uploadVoice">上传录音</div>
+    </div>
+
+    <div class="col-xs-12 mb20">
+        <div class="btn btn-lg btn-primary col-xs-12" id="downloadVoice">下载录音</div>
+    </div>
+
+    <script src="{% static 'quote/js/jquery.min.js' %}"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="{% static 'tools/js/record-voice.js' %}"></script>
+
+</body>
+</html>
